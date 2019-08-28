@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: beijing
+    uniqueID: 622541783
+    locked: 0
+  - name: zhangai
+    uniqueID: 3154913013
+    locked: 0
+  - name: daoju
+    uniqueID: 4172546863
+    locked: 0
+  - name: player
+    uniqueID: 268544501
+    locked: 0

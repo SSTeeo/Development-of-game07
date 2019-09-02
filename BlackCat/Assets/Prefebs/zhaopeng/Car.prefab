@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5811185013184995973}
   - component: {fileID: 5811185013184996026}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,8 +92,7 @@ GameObject:
   - component: {fileID: 5811185013589549243}
   - component: {fileID: 5811185013589549242}
   - component: {fileID: 5811185013589549189}
-  - component: {fileID: 5811185013589549241}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Right_wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5811185013589549191}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8885429, y: -0.20886827, z: 0}
+  m_LocalPosition: {x: 0.8885429, y: -0.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5811185014101742800}
@@ -210,39 +209,20 @@ WheelJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
+  m_ConnectedRigidBody: {fileID: 5811185014393141771}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.1625115, y: 2.1972985}
+  m_ConnectedAnchor: {x: 0.8885429, y: -0.20886827}
   m_Suspension:
     m_DampingRatio: 0.7
-    m_Frequency: 2
+    m_Frequency: 20
     m_Angle: 90
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 0
+    m_MotorSpeed: 750
     m_MaximumMotorForce: 10000
---- !u!95 &5811185013589549241
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5811185013589549191}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cc67cfa3f54ccdc479a40d7ddc81469f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5811185013849719073
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,8 +236,7 @@ GameObject:
   - component: {fileID: 5811185013849719077}
   - component: {fileID: 5811185013849719076}
   - component: {fileID: 5811185013849719079}
-  - component: {fileID: 5811185013849719131}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Left_wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5811185013849719073}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8814571, y: -0.20886827, z: 0}
+  m_LocalPosition: {x: -0.8814571, y: -0.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5811185013184995973}
@@ -374,39 +353,20 @@ WheelJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
+  m_ConnectedRigidBody: {fileID: 5811185014393141771}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.6023922, y: 2.1761703}
+  m_ConnectedAnchor: {x: -0.8814571, y: -0.20886827}
   m_Suspension:
     m_DampingRatio: 0.7
-    m_Frequency: 2
+    m_Frequency: 20
     m_Angle: 90
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 0
+    m_MotorSpeed: 750
     m_MaximumMotorForce: 10000
---- !u!95 &5811185013849719131
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5811185013849719073}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4471d5232c4e9c248a5a90f1f8cfe6bb, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5811185014101742803
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5811185014101742800}
   - component: {fileID: 5811185014101742801}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +458,7 @@ GameObject:
   - component: {fileID: 5811185014393141768}
   - component: {fileID: 5811185014393141771}
   - component: {fileID: 5811185014393141770}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +541,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -589,7 +549,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &5811185014393141770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -603,7 +563,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.15}
+  m_Offset: {x: 0, y: 0.16}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -614,5 +574,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.55, y: 0.03}
+  m_Size: {x: 2.55, y: 0.02}
   m_EdgeRadius: 0

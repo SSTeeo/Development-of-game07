@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 2188443108363378334}
   - component: {fileID: 2188443108363378335}
   - component: {fileID: 2188443108363378332}
+  - component: {fileID: 1049841021486168916}
   m_Layer: 0
-  m_Name: tex_eqlopot_png.rcc_000199
+  m_Name: Fire-red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,3 +100,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &1049841021486168916
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2188443108363378333}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.64}
+    newSize: {x: 0.32, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.049999997, y: 0.03}
+      - {x: -0.13, y: -0.08}
+      - {x: -0.13, y: -0.25}
+      - {x: -0.11, y: -0.29999998}
+      - {x: 0.12, y: -0.29999998}
+      - {x: 0.14, y: -0.22999999}
+      - {x: 0.14, y: -0.049999997}
+      - {x: 0.03, y: 0.03}

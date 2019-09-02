@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Player
+  - Car
+  - Pathway
   - 
   - 
   - 
@@ -46,12 +46,6 @@ TagManager:
     locked: 0
   - name: zhangai
     uniqueID: 3154913013
-    locked: 0
-  - name: zhangai2
-    uniqueID: 409109511
-    locked: 0
-  - name: zhangai3
-    uniqueID: 106072339
     locked: 0
   - name: daoju
     uniqueID: 4172546863

@@ -7,13 +7,15 @@ public class BlackCatController : MonoBehaviour
     public float Force = 35.0f;
     public float Distance = 3.0f;
     private float CurrentHeight;
-    private Rigidbody2D Cat;
+    private Rigidbody2D BlackCat;
+    private Rigidbody2D Car;
     private Animator Anim;
     private bool CatJump = true;
     // Start is called before the first frame update
     void Start()
     {
-        Cat = GetComponent<Rigidbody2D>();
+        BlackCat = GetComponent<Rigidbody2D>();
+        Car = GameObject.Find("Car").GetComponent<Rigidbody2D>();
         Anim = GetComponent<Animator>();
     }
 
@@ -28,12 +30,11 @@ public class BlackCatController : MonoBehaviour
         if (transform.position.y - CurrentHeight >= Distance)
         {
             CatJump = false;
-
         }
 
         if (CatJump && Input.GetButton("Fire1"))
         {
-            Cat.AddForce(new Vector2(0, Force));
+            BlackCat.AddForce(new Vector2(0, Force));
             Anim.SetBool("Grounded", false);
         }
     }
@@ -45,7 +46,15 @@ public class BlackCatController : MonoBehaviour
             CurrentHeight = transform.position.y;
             CatJump = true;
             Anim.SetBool("Grounded", true);
+            Car.constraints = RigidbodyConstraints2D.None;
         }
-       
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Diamond")
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }

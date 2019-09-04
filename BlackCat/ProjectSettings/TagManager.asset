@@ -45,6 +45,12 @@ TagManager:
   - name: beijing
     uniqueID: 622541783
     locked: 0
+  - name: beijing2
+    uniqueID: 324376513
+    locked: 0
+  - name: beijing3
+    uniqueID: 161290327
+    locked: 0
   - name: zhangai
     uniqueID: 3154913013
     locked: 0

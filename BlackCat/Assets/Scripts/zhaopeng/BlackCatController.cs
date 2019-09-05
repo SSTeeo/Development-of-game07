@@ -10,7 +10,7 @@ public class BlackCatController : MonoBehaviour
     private Rigidbody2D BlackCat;
     private Rigidbody2D Car;
     private Animator Anim;
-    private bool CatJump = true;
+    private bool CatJump = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +52,7 @@ public class BlackCatController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Diamond")
+        if (collision.gameObject.CompareTag("Diamond"))
         {
             Destroy(collision.gameObject);
         }

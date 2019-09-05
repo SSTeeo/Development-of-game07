@@ -19,8 +19,9 @@ public class batdead : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("cat"))
         {
+            collision.gameObject.GetComponent<AudioSource>().Play();
             isDead = true;
             Anim.SetBool("Dead", isDead);
             Anim.SetTrigger("DeadOnce");

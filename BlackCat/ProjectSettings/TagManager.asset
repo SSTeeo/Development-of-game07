@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - test
+  - BlackCat
+  - Car
+  - Pathway
+  - Diamond
   layers:
   - Default
   - TransparentFX
@@ -14,9 +17,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Player
+  - Car
+  - Pathway
   - 
   - 
   - 

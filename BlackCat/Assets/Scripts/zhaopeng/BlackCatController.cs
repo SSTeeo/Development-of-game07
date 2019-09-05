@@ -15,10 +15,6 @@ public class BlackCatController : MonoBehaviour
     void Start()
     {
         BlackCat = GetComponent<Rigidbody2D>();
-<<<<<<< HEAD
-=======
-        //Car = GameObject.Find("Car").GetComponent<Rigidbody2D>();
->>>>>>> c8667b56e49d32ea731831f2874bae6e4425d757
         Anim = GetComponent<Animator>();
     }
 
@@ -47,15 +43,11 @@ public class BlackCatController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Car"))
         {
-<<<<<<< HEAD
             Rigidbody2D Car = collision.gameObject.GetComponent<Rigidbody2D>();
-=======
-            Rigidbody2D rig = collision.gameObject.GetComponent<Rigidbody2D>();
->>>>>>> c8667b56e49d32ea731831f2874bae6e4425d757
             CurrentHeight = transform.position.y;
             CatJump = true;
             Anim.SetBool("Grounded", true);
-            rig.constraints = RigidbodyConstraints2D.None;
+            Car.constraints = RigidbodyConstraints2D.None;
         }
     }
 

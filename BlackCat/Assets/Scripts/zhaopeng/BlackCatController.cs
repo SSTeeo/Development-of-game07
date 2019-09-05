@@ -15,7 +15,7 @@ public class BlackCatController : MonoBehaviour
     void Start()
     {
         BlackCat = GetComponent<Rigidbody2D>();
-        Car = GameObject.Find("Car").GetComponent<Rigidbody2D>();
+        //Car = GameObject.Find("Car").GetComponent<Rigidbody2D>();
         Anim = GetComponent<Animator>();
     }
 
@@ -31,7 +31,8 @@ public class BlackCatController : MonoBehaviour
         {
             CatJump = false;
         }
-
+        print("CatJump:" + CatJump);
+        print("Input:" + Input.GetButton("Fire1"));
         if (CatJump && Input.GetButton("Fire1"))
         {
             BlackCat.AddForce(new Vector2(0, Force));
@@ -43,10 +44,11 @@ public class BlackCatController : MonoBehaviour
     {
         if (collision.gameObject.name=="Car")
         {
+            Rigidbody2D rig = collision.gameObject.GetComponent<Rigidbody2D>();
             CurrentHeight = transform.position.y;
             CatJump = true;
             Anim.SetBool("Grounded", true);
-            Car.constraints = RigidbodyConstraints2D.None;
+            rig.constraints = RigidbodyConstraints2D.None;
         }
     }
 

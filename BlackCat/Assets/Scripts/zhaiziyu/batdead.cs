@@ -4,27 +4,29 @@ using UnityEngine;
 
 public class batdead : MonoBehaviour
 {
-    private bool isDead = false;
-    private Animator Anim = null;
+    private Rigidbody2D GG;
+    //private Animator anim = null;
+    //private bool isDead = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        GG = GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    public void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("cat"))
-        {
-            collision.gameObject.GetComponent<AudioSource>().Play();
-            isDead = true;
-            Anim.SetBool("Dead", isDead);
-            Anim.SetTrigger("DeadOnce");
-        }
+        gameObject.transform.parent.Find("redbat").GetComponent<Rigidbody2D>().simulated = true;
+        //anim.SetBool("Dead", isDead);
+        //anim.SetTrigger("Deadonce");
+
+        //GG.GetComponent<Rigidbody2D>().AddTorque(0, 2);
     }
+
 }

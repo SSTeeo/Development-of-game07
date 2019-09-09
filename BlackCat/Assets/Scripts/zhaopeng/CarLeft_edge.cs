@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CarLeft_edge : MonoBehaviour
 {
+    private bool Adjust = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,14 +14,18 @@ public class CarLeft_edge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Adjust)
+        {
+            GameObject.FindGameObjectWithTag("BlackCat").transform.Translate(new Vector3(0.5f * Time.deltaTime, 0));
+            Adjust = !Adjust;
+        }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "BlackCat")
+        if (collision.gameObject.CompareTag("BlackCat"))
         {
-            collision.gameObject.transform.Translate(new Vector3(0.3f, 0));
+            Adjust = true;
         }
     }
 }

@@ -8,6 +8,10 @@ TagManager:
   - Car
   - Pathway
   - Diamond
+  - Fire
+  - Bat
+  - boucewall
+  - Inverter
   - test
   - boucewall
   - Boss
@@ -24,7 +28,7 @@ TagManager:
   - Player
   - Car
   - Pathway
-  - Fireball
+  - 
   - 
   - 
   - 
@@ -66,7 +70,4 @@ TagManager:
     locked: 0
   - name: player
     uniqueID: 268544501
-    locked: 0
-  - name: boss
-    uniqueID: 2855183661
     locked: 0

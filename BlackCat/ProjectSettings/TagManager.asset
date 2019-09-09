@@ -10,7 +10,8 @@ TagManager:
   - Diamond
   - Fire
   - Bat
-  - keypulse1
+  - boucewall
+  - Inverter
   - boucewall
   layers:
   - Default

@@ -30,7 +30,7 @@ public class kaiguan : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("test"))
+        if (collision.gameObject.CompareTag("BlackCat"))
         {
             GetComponent<SpriteRenderer>().sprite = switch_on;
             s = false;

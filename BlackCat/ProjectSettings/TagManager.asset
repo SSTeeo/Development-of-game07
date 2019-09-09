@@ -8,6 +8,8 @@ TagManager:
   - Car
   - Pathway
   - Diamond
+  - Fire
+  - Bat
   layers:
   - Default
   - TransparentFX

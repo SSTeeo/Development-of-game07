@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 131293760}
   m_Layer: 9
   m_Name: Right_edge
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.1, y: 0.01}
@@ -56,7 +56,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.3}
+  m_Size: {x: 0.3, y: 0.32}
   m_EdgeRadius: 0
 --- !u!114 &131293760
 MonoBehaviour:
@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 1203796091}
   m_Layer: 9
   m_Name: Left_edge
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +112,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.1, y: 0.01}
@@ -126,7 +126,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.3}
+  m_Size: {x: 0.3, y: 0.32}
   m_EdgeRadius: 0
 --- !u!114 &1203796091
 MonoBehaviour:
@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 5811185013589549189}
   m_Layer: 9
   m_Name: Right_wheel
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -330,7 +330,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -348,7 +348,7 @@ WheelJoint2D:
   m_GameObject: {fileID: 5811185013589549191}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 0
+  m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 5811185014393141771}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -361,7 +361,7 @@ WheelJoint2D:
     m_Angle: 90
   m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 750
+    m_MotorSpeed: 900
     m_MaximumMotorForce: 10000
 --- !u!1 &5811185013849719073
 GameObject:
@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 5811185013849719079}
   m_Layer: 9
   m_Name: Left_wheel
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -474,7 +474,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -492,7 +492,7 @@ WheelJoint2D:
   m_GameObject: {fileID: 5811185013849719073}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 0
+  m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 5811185014393141771}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -505,7 +505,7 @@ WheelJoint2D:
     m_Angle: 90
   m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 750
+    m_MotorSpeed: 900
     m_MaximumMotorForce: 10000
 --- !u!1 &5811185014101742803
 GameObject:
@@ -597,7 +597,7 @@ GameObject:
   - component: {fileID: 5811185014393141769}
   - component: {fileID: 5811185014393141768}
   - component: {fileID: 5811185014393141771}
-  - component: {fileID: 963766597093729762}
+  - component: {fileID: 18895251318984720}
   - component: {fileID: 5811185014393141782}
   m_Layer: 9
   m_Name: Car
@@ -684,7 +684,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -693,8 +693,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!68 &963766597093729762
-EdgeCollider2D:
+--- !u!61 &18895251318984720
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -707,10 +707,18 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.16}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 0.32}
+    newSize: {x: 2.56, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.05, y: 0.02}
   m_EdgeRadius: 0
-  m_Points:
-  - {x: -1.28, y: 0}
-  - {x: 1.28, y: 0}
 --- !u!114 &5811185014393141782
 MonoBehaviour:
   m_ObjectHideFlags: 0

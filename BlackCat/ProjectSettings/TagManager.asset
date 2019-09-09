@@ -10,6 +10,7 @@ TagManager:
   - Diamond
   - boucewall
   - greembatbody
+  - keypulse1
   layers:
   - Default
   - TransparentFX

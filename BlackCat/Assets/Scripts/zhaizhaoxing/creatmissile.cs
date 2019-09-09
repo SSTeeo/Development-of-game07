@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HingdePlate : MonoBehaviour
+public class creatmissile : MonoBehaviour
 {
+    public GameObject missile;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,10 @@ public class HingdePlate : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Instantiate(missile, new Vector3(16, 4, 0), Quaternion.identity);
     }
 }

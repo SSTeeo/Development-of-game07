@@ -8,6 +8,10 @@ TagManager:
   - Car
   - Pathway
   - Diamond
+  - test
+  - boucewall
+  - Boss
+  - Hand
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BlackCatController : MonoBehaviour
 {
-    public float Force = 20.0f;
+    private float ForceX = 2.0f;
+    public float ForceY = 20.0f;
     public float Distance = 2.2f;
     private float CurrentHeight;
     private Rigidbody2D BlackCat;
@@ -40,7 +41,7 @@ public class BlackCatController : MonoBehaviour
 
         if (CatJump && Input.GetButton("Fire1"))
         {
-            BlackCat.AddForce(new Vector2(2.0f, Force));
+            BlackCat.AddForce(new Vector2(ForceX, ForceY));
             Anim.SetBool("Grounded", false);
         }
 

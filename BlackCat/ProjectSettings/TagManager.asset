@@ -10,6 +10,8 @@ TagManager:
   - Diamond
   - Fire
   - Bat
+  - boucewall
+  - Inverter
   layers:
   - Default
   - TransparentFX

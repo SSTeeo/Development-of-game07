@@ -8,8 +8,8 @@ TagManager:
   - Car
   - Pathway
   - Diamond
-  - boucewall
-  - greembatbody
+  - Fire
+  - Bat
   layers:
   - Default
   - TransparentFX
@@ -22,7 +22,7 @@ TagManager:
   - Player
   - Car
   - Pathway
-  - Fireball
+  - 
   - 
   - 
   - 
@@ -64,7 +64,4 @@ TagManager:
     locked: 0
   - name: player
     uniqueID: 268544501
-    locked: 0
-  - name: boss
-    uniqueID: 2855183661
     locked: 0

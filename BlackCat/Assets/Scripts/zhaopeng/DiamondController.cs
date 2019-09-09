@@ -8,7 +8,6 @@ public class DiamondController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //DiaParticle.SetActive(false);
         DiaParticle.transform.position = transform.position;
     }
 

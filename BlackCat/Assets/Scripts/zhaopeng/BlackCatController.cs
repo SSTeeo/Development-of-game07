@@ -10,19 +10,13 @@ public class BlackCatController : MonoBehaviour
     private Rigidbody2D BlackCat;
     private Animator Anim;
     private bool CatJump = false;
-
     private bool isDead = false;
-
-    public bool Awesome;
-    public Vector2 direction;
-    private Transform Cat_Transform;
 
     // Start is called before the first frame update
     void Start()
     {
         BlackCat = GetComponent<Rigidbody2D>();
         Anim = GetComponent<Animator>();
-        Cat_Transform = GameObject.FindGameObjectWithTag("BlackCat").GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -64,15 +58,6 @@ public class BlackCatController : MonoBehaviour
             Anim.SetBool("Grounded", true);
             Car.constraints = RigidbodyConstraints2D.None;
         }
-
-
-
-        if(collision.gameObject.CompareTag("boucewall"))
-        {
-            ReverseMove();
-            Cat_Transform.eulerAngles = new Vector3(0, 180, 0);
-        }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -98,22 +83,6 @@ public class BlackCatController : MonoBehaviour
         {
             isDead = true;
             Anim.SetTrigger("Dead");
-        }
-    }
-
-    public void ReverseMove()
-    {
-        if (Awesome == true)
-        {
-            Debug.Log("111");
-            BlackCat.velocity = direction;
-
-
-        }
-        else if (Awesome == false && Input.GetButton("Fire1"))
-        {
-            Debug.Log("222");
-            BlackCat.velocity = direction;
         }
     }
 }

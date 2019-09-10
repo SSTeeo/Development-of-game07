@@ -7,7 +7,8 @@ public class baozha : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.Find("baozha").GetComponent<ParticleSystem>().Stop();
+        //GameObject.Find("baozha").GetComponent<ParticleSystem>().Stop();
+        GameObject.FindGameObjectWithTag("baozha").GetComponent<ParticleSystem>().Stop();
     }
 
     // Update is called once per frame
@@ -19,8 +20,10 @@ public class baozha : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("birdboss"))
         {
-            GameObject.Find("baozha").GetComponent<ParticleSystem>().Play();
+            //GameObject.Find("baozha").GetComponent<ParticleSystem>().Play();
+            GameObject.FindGameObjectWithTag("baozha").GetComponent<ParticleSystem>().Play();
             
+
         }
     }
     

@@ -34,6 +34,8 @@ public class kaiguan : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().sprite = switch_on;
             s = false;
+
+            /*collision.gameObject*/GetComponent<AudioSource>().Play();
         }
     }
 }

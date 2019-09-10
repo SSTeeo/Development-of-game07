@@ -13,6 +13,13 @@ TagManager:
   - boucewall
   - Inverter
   - boucewall
+  - test
+  - boucewall
+  - Boss
+  - Hand
+  - Missle
+  - keypulse1
+  - birdboss
   layers:
   - Default
   - TransparentFX

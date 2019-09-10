@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2188443108363378335}
   - component: {fileID: 2188443108363378332}
   - component: {fileID: 1049841021486168916}
+  - component: {fileID: 1118442546}
   m_Layer: 0
   m_Name: Fire-red
   m_TagString: Fire
@@ -133,3 +134,16 @@ PolygonCollider2D:
       - {x: 0.14, y: -0.22999999}
       - {x: 0.14, y: -0.049999997}
       - {x: 0.03, y: 0.03}
+--- !u!114 &1118442546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2188443108363378333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68dbac87d97e8934bab56c8399b52b1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireP: {fileID: 4087959755220120600, guid: 5f8a4201274e23446b1a247738d8e1f5, type: 3}

@@ -2,25 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class niao : MonoBehaviour
+public class M_particle : MonoBehaviour
 {
+    public GameObject MParticle;
     // Start is called before the first frame update
     void Start()
     {
-        
+        MParticle.transform.position = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Missile"))
+        if (collision.gameObject.CompareTag("birdboss"))
         {
-            gameObject.transform.Translate(new Vector3(-1.0f, 0));
-            Destroy(collision.gameObject,0.1f);
+            Instantiate(MParticle, transform.position, Quaternion.identity);
+            MParticle.SetActive(true);
         }
+        
     }
 }

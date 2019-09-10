@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class BlackCatController : MonoBehaviour
 {
-    private float ForceX = 1.05f;
+
+    public float ForceX = 1.05f;
     public float ForceY = 20.0f;
     public float Distance = 2.2f;
+    public static float Count = 0;
+    public iTween.EaseType type;
+
+    public AudioClip DiamondCollect;
+
     private float CurrentHeight;
     private Rigidbody2D BlackCat;
     private Animator Anim;
@@ -59,13 +65,26 @@ public class BlackCatController : MonoBehaviour
             Anim.SetBool("Grounded", true);
             Car.constraints = RigidbodyConstraints2D.None;
         }
+
+        if (collision.gameObject.name == "Spring")
+        {
+            Hashtable args = new Hashtable();
+            args.Add("speed", 10.0f);
+            args.Add("path", iTweenPath.GetPath("MyPath"));
+            args.Add("easeType", type);
+            iTween.MoveTo(gameObject, args);
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Diamond"))
         {
+            AudioSource.PlayClipAtPoint(DiamondCollect, Camera.main.transform.position);
             Destroy(collision.gameObject);
+            Count++;
+            Debug.Log(Count);
         }
 
         //if (collision.gameObject.CompareTag("Diamond"))

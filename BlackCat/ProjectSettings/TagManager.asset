@@ -16,6 +16,7 @@ TagManager:
   - boucewall
   - Boss
   - Hand
+  - Missle
   layers:
   - Default
   - TransparentFX

@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destory : MonoBehaviour
+public class Levelchoose : MonoBehaviour
 {
-   
     // Start is called before the first frame update
     void Start()
     {
@@ -15,15 +14,5 @@ public class Destory : MonoBehaviour
     void Update()
     {
         
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Boss"))
-        {
-            Destroy(gameObject);
-           
-            
-        }
     }
 }

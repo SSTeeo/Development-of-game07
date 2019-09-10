@@ -2,28 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Handmove : MonoBehaviour
+public class Fire : MonoBehaviour
 {
-    public Animator anim;
-
+    public GameObject FireP;
     // Start is called before the first frame update
     void Start()
     {
-        anim.enabled = false;
+        FireP.transform.position = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("BlackCat"))
-        {
-            anim.enabled = true;
-        }
-      
+        Instantiate(FireP, transform.position, Quaternion.identity);
+        FireP.SetActive(true);
+        Destroy(gameObject);
     }
+
 }

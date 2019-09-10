@@ -12,6 +12,7 @@ TagManager:
   - Bat
   - boucewall
   - Inverter
+  - boucewall
   - test
   - boucewall
   - Boss
@@ -71,4 +72,7 @@ TagManager:
     locked: 0
   - name: player
     uniqueID: 268544501
+    locked: 0
+  - name: boss
+    uniqueID: 950286937
     locked: 0

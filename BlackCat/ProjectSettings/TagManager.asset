@@ -78,3 +78,6 @@ TagManager:
   - name: boss
     uniqueID: 950286937
     locked: 0
+  - name: duqi
+    uniqueID: 3795284847
+    locked: 0

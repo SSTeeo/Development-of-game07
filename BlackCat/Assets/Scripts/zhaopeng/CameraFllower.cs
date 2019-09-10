@@ -17,6 +17,11 @@ public class CameraFllower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    private void LateUpdate()
+    {
         transform.position = new Vector3(
             BlackCat.position.x + distanceX,
             BlackCat.position.y + distanceY,

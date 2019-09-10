@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4087959755220120606}
   - component: {fileID: 3328906282120173065}
   m_Layer: 0
-  m_Name: DiamondParticle
+  m_Name: UIParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

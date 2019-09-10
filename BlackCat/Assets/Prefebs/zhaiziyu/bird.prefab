@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1728731269399001908}
   m_Layer: 0
   m_Name: bird
-  m_TagString: Untagged
+  m_TagString: birdboss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,7 +40,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1728731269480776209}
-  - component: {fileID: 1728731269480776214}
+  - component: {fileID: 1864523417}
+  - component: {fileID: 1864523418}
+  - component: {fileID: 1864523416}
   m_Layer: 0
   m_Name: mouth
   m_TagString: Untagged
@@ -55,16 +57,120 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728731269480776208}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.4264, y: -1.77, z: -0.089927}
+  m_LocalRotation: {x: -0, y: -0, z: -0.008393635, w: 0.99996483}
+  m_LocalPosition: {x: 10.58, y: -1.93, z: -0.089927}
   m_LocalScale: {x: 1.1559, y: 1.1559, z: 1.1559}
   m_Children:
   - {fileID: 1728731269837922872}
   - {fileID: 1728731269751765790}
   m_Father: {fileID: 1728731269693785720}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1728731269480776214
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.9620001}
+--- !u!82 &1864523417
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728731269480776208}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 40c35fb8f9ba38b4d80a1cfeee9efc97, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!81 &1864523418
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728731269480776208}
+  m_Enabled: 1
+--- !u!95 &1864523416
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -74,7 +180,7 @@ Animator:
   m_GameObject: {fileID: 1728731269480776208}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2b56fdc580c7ba4488184bae204eef23, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -151,7 +257,7 @@ SpriteRenderer:
   m_SortingLayerID: 268544501
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 41bde33aa3a06664eb828a8a14ff4288, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65745623f121f5841a8247ce575d00b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -236,7 +342,7 @@ SpriteRenderer:
   m_SortingLayerID: 950286937
   m_SortingLayer: 7
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a0a3bb141e2e44449b9cacde90365b11, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 325fb37da4d286e42b21f3ff15a7bc5c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

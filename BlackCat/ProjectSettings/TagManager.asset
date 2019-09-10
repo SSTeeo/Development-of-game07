@@ -19,6 +19,7 @@ TagManager:
   - Hand
   - Missle
   - keypulse1
+  - birdboss
   layers:
   - Default
   - TransparentFX

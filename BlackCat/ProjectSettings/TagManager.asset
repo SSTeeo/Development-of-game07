@@ -13,6 +13,11 @@ TagManager:
   - boucewall
   - Inverter
   - boucewall
+  - test
+  - boucewall
+  - Boss
+  - Hand
+  - Missle
   - keypulse1
   layers:
   - Default

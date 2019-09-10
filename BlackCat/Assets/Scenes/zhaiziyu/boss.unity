@@ -14550,6 +14550,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bird
       objectReference: {fileID: 0}
+    - target: {fileID: 1728731269693785722, guid: c6a7daae0dfea1646ae44c87a541b95e,
+        type: 3}
+      propertyPath: m_TagString
+      value: birdboss
+      objectReference: {fileID: 0}
     - target: {fileID: 1728731269399001908, guid: c6a7daae0dfea1646ae44c87a541b95e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14604,11 +14609,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1728731269693785722, guid: c6a7daae0dfea1646ae44c87a541b95e,
-        type: 3}
-      propertyPath: m_TagString
-      value: birdboss
       objectReference: {fileID: 0}
     - target: {fileID: 1728731269480776208, guid: c6a7daae0dfea1646ae44c87a541b95e,
         type: 3}

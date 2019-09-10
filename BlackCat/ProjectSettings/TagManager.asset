@@ -13,6 +13,7 @@ TagManager:
   - boucewall
   - Inverter
   - boucewall
+  - keypulse1
   layers:
   - Default
   - TransparentFX

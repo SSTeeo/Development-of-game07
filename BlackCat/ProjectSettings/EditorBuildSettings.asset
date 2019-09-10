@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/zhaopeng/Sample_zp.unity
     guid: 2dd955e371ecc2b469a7f6de498fc285
+  - enabled: 1
+    path: Assets/Scenes/taoyucheng.unity
+    guid: 984d016de0bec364aa401276f08d3a3c
+  - enabled: 1
+    path: Assets/Scenes/zzx.unity
+    guid: 5464c6d844756254181ac6ae6d76e53f
+  - enabled: 1
+    path: Assets/Scenes/zhaiziyu/boss.unity
+    guid: 9547f62815a1fe34eb582059a3245d9e
   m_configObjects: {}

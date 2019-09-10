@@ -70,25 +70,25 @@ public class GameUImanager : MonoBehaviour
 
     public void Boss1()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("zzx");
         Time.timeScale = 1;
     }
 
     public void Boss2()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("boss");
         Time.timeScale = 1;
     }
 
     public void Level32()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Sample_zp");
         Time.timeScale = 1;
     }
 
     public void Level45()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("taoyucheng");
         Time.timeScale = 1;
     }
 }

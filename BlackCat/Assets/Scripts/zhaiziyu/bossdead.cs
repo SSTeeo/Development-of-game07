@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class niao : MonoBehaviour
+public class bossdead : MonoBehaviour
 {
+    public Rigidbody2D B;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,12 +16,12 @@ public class niao : MonoBehaviour
     {
         
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Missile"))
+        if (collision.gameObject.CompareTag("birdboss"))
         {
-            gameObject.transform.Translate(new Vector3(-1.0f, 0));
-            Destroy(collision.gameObject,0.1f);
+            B.gravityScale = 1;
         }
     }
 }

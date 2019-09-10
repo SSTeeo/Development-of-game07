@@ -20,6 +20,7 @@ TagManager:
   - Missle
   - keypulse1
   - birdboss
+  - Missile
   layers:
   - Default
   - TransparentFX
@@ -32,7 +33,7 @@ TagManager:
   - Player
   - Car
   - Pathway
-  - 
+  - Bird
   - 
   - 
   - 

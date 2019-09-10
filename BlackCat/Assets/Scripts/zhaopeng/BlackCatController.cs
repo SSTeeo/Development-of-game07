@@ -5,7 +5,7 @@ using UnityEngine;
 public class BlackCatController : MonoBehaviour
 {
 
-    private float ForceX = 1.05f;
+    public float ForceX = 1.05f;
     public float ForceY = 20.0f;
     public float Distance = 2.2f;
     public static float Count = 0;
